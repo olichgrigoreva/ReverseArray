@@ -12,11 +12,11 @@ public class Program {
             array = arrayInit(sc, n, array);
 
             System.out.println("Начальный массив: ");
-            printArray(n, array);
+            printArray(array);
 
             System.out.println("\nКонечный массив: ");
             array2 = arrayReverse(n, array);
-            printArray(n, array2);
+            printArray(array2);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -25,10 +25,9 @@ public class Program {
 
     }
 
-    private static void printArray(int n, int[] array) {
-        int i;
-        for (i = 0; i < n; i++) {
-            System.out.printf("%d ", array[i]);
+    private static void printArray(int[] array) {
+        for(int i : array){
+            System.out.printf("%d ", i);
         }
     }
 
