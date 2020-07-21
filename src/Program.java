@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(new FileInputStream("input.txt"));) {
+        try (Scanner sc = new Scanner(new FileInputStream("input.txt"))) {
             int n = sc.nextInt();
             int array[] = new int[n];
             int array2[];
